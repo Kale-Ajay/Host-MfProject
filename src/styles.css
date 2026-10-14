@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+* { box-sizing: border-box; }
+body { margin: 0; background: #f6f8f7; }
+.app-layout { display: flex; min-height: 100vh; color: #202625; }
+.sidebar { width: 216px; flex: 0 0 216px; background: #fff; border-right: 1px solid #edf0ee; min-height: 100vh; position: fixed; inset: 0 auto 0 0; z-index: 5; }
+.sidebar-inner { padding: 26px 16px 18px; height: 100vh; display: flex; flex-direction: column; }
+.brand { font-size: 23px !important; font-weight: 800 !important; letter-spacing: -1px !important; padding: 0 8px; margin-bottom: 44px !important; color: #1f2725; }
+.brand span { color: #319b82; }
+.sidebar-label { font-size: 10px !important; font-weight: 700 !important; letter-spacing: 1.2px !important; color: #a0a7a4; padding: 0 12px; margin-bottom: 10px !important; }
+.nav-item { min-height: 44px; border-radius: 9px !important; margin-bottom: 5px !important; padding: 0 11px !important; }
+.nav-item .MuiListItemIcon-root { min-width: 34px; color: #68716e; }
+.nav-item .MuiListItemText-primary { font-size: 13px; font-weight: 550; }
+.nav-item.Mui-selected { background: #319b82 !important; color: white; box-shadow: 0 5px 12px #319b8226; }
+.nav-item.Mui-selected .MuiListItemIcon-root { color: white; }
+.nav-item.Mui-selected:hover { background: #27866f !important; }
+.sidebar-bottom { margin-top: auto; }
+.main-area { min-width: 0; flex: 1; margin-left: 216px; }
+.topbar { background: #fff !important; border-bottom: 1px solid #edf0ee; }
+.topbar-toolbar { min-height: 72px !important; gap: 12px; padding: 0 28px !important; }
+.search-field { width: 190px; margin-right: 12px !important; }
+.search-field input { font-size: 13px; }
+.page-content { padding: 22px 26px 36px; max-width: 1700px; margin: 0 auto; }
+.login-page { min-height: 100vh; display: grid; place-items: center; padding: 24px; background: radial-gradient(circle at 15% 15%, #e1f3ed 0, transparent 38%), #f6f8f7; }
+.login-card { width: min(100%, 420px); padding: 36px; border: 1px solid #edf0ee; border-radius: 18px !important; box-shadow: 0 16px 50px #203a3010 !important; }
+@media (max-width: 900px) { .main-area { margin-left: 0; } .page-content { padding: 16px; } .topbar-toolbar { padding: 0 12px !important; gap: 6px; } .search-field { width: 120px; margin-right: 0 !important; } }
+@media (max-width: 480px) { .search-field { display: none; } .login-card { padding: 26px; } }
